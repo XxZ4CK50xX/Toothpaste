@@ -30,7 +30,6 @@ namespace teethpaste
             if (Clipboard.ContainsImage())
             {
                 Clipboard.GetImage().Save(fileName, ImageFormat.Png);
-                Clipboard.SetText($"![image](/Desktop/testing123/{Path.GetFileName(fileName)})");
 
             }
 
@@ -39,11 +38,28 @@ namespace teethpaste
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             button1.PerformClick();
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Show();
+            this.WindowState = FormWindowState.Normal;
+            notifyIcon1.Visible = false;
+        }
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            //google code go brrrrrr)  
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                Hide();
+                notifyIcon1.Visible = true;
+            }
         }
     }
     }
