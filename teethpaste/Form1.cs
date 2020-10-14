@@ -48,9 +48,17 @@ namespace teethpaste
 
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+  
         }
         private void Form1_Resize(object sender, EventArgs e)
         {
+        }
+
+        private void Form1_SizeChanged(object sender, EventArgs e)
+        {
+            notifyIcon1.ShowBalloonTip(2147483647);
+            this.ShowInTaskbar = false;
+            notifyIcon1.Visible = true;
         }
     }
     }
