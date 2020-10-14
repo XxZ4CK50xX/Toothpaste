@@ -48,18 +48,9 @@ namespace teethpaste
 
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            Show();
-            this.WindowState = FormWindowState.Normal;
-            notifyIcon1.Visible = false;
         }
         private void Form1_Resize(object sender, EventArgs e)
         {
-            //google code go brrrrrr)  
-            if (this.WindowState == FormWindowState.Minimized)
-            {
-                Hide();
-                notifyIcon1.Visible = true;
-            }
         }
     }
     }
