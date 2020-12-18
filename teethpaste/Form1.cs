@@ -48,7 +48,7 @@ namespace teethpaste
 
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-
+            this.WindowState = FormWindowState.Normal;
         }
         private void Form1_Resize(object sender, EventArgs e)
         {
@@ -85,10 +85,7 @@ namespace teethpaste
             }
 
         }
-        void icon_BalloonTipClicked(object sender, EventArgs e)
-        {
-            this.Show();
-        }
+    
     }
 
 
