@@ -22,6 +22,7 @@ namespace teethpaste
 
         private void button1_Click(object sender, EventArgs e)
         {
+            timer1.Enabled = true;
             var path1 = pathText.Text;
             var prefix = "toothpaste";
             var fileName = Enumerable.Range(1, 50000)
