@@ -18,3 +18,13 @@ C:\Users\Admin\source\repos\teethpaste\Toothpaste\teethpaste\obj\Debug\teethpast
 C:\Users\Admin\source\repos\teethpaste\Toothpaste\teethpaste\obj\Debug\teethpaste.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\teethpaste\Toothpaste\teethpaste\obj\Debug\teethpaste.exe
 C:\Users\Admin\source\repos\teethpaste\Toothpaste\teethpaste\obj\Debug\teethpaste.pdb
+D:\toothpaste\teethpaste\bin\Debug\teethpaste.exe.config
+D:\toothpaste\teethpaste\bin\Debug\teethpaste.exe
+D:\toothpaste\teethpaste\bin\Debug\teethpaste.pdb
+D:\toothpaste\teethpaste\obj\Debug\teethpaste.csprojAssemblyReference.cache
+D:\toothpaste\teethpaste\obj\Debug\teethpaste.Form1.resources
+D:\toothpaste\teethpaste\obj\Debug\teethpaste.Properties.Resources.resources
+D:\toothpaste\teethpaste\obj\Debug\teethpaste.csproj.GenerateResource.cache
+D:\toothpaste\teethpaste\obj\Debug\teethpaste.csproj.CoreCompileInputs.cache
+D:\toothpaste\teethpaste\obj\Debug\teethpaste.exe
+D:\toothpaste\teethpaste\obj\Debug\teethpaste.pdb

@@ -22,7 +22,9 @@ namespace teethpaste
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var path = new[] { @"C:\Users\Admin\Desktop\testing123" }.First(p => Directory.Exists(p));
+            var documentsFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            var saveDirectory = documentsFolder + "testing123";
+            var path = new[] { @"saveDirectory" }.First(p => Directory.Exists(p));
             var prefix = "toothpaste";
             var fileName = Enumerable.Range(1, 50000)
                             .Select(n => Path.Combine(path, $"{prefix}-{n}.png"))
@@ -62,6 +64,11 @@ namespace teethpaste
                 this.ShowInTaskbar = false;
                 notifyIcon1.Visible = true;
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
