@@ -62,6 +62,7 @@ namespace teethpaste
                 this.ShowInTaskbar = false;
                 notifyIcon1.Visible = true;
             }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -82,6 +83,14 @@ namespace teethpaste
             {
                 MessageBox.Show("it already exists dum dum");
             }
+
+        }
+        void icon_BalloonTipClicked(object sender, EventArgs e)
+        {
+            this.Show();
         }
     }
+
+
+
 }
