@@ -23,8 +23,9 @@ namespace teethpaste
         private void button1_Click(object sender, EventArgs e)
         {
             var documentsFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            var saveDirectory = documentsFolder + "testing123";
-            var path = new[] { @"saveDirectory" }.First(p => Directory.Exists(p));
+            var newHome = documentsFolder + "toothpaste/";
+
+            var path = new[] { @"C:\Users\Spane Boswell\documents\toothpaste\" }.First(p => Directory.Exists(p));
             var prefix = "toothpaste";
             var fileName = Enumerable.Range(1, 50000)
                             .Select(n => Path.Combine(path, $"{prefix}-{n}.png"))
