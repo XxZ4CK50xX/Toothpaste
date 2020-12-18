@@ -22,13 +22,10 @@ namespace teethpaste
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var documentsFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            var newHome = documentsFolder + "toothpaste/";
-
-            var path = new[] { @"C:\Users\Spane Boswell\documents\toothpaste\" }.First(p => Directory.Exists(p));
+            var path1 = pathText.Text;
             var prefix = "toothpaste";
             var fileName = Enumerable.Range(1, 50000)
-                            .Select(n => Path.Combine(path, $"{prefix}-{n}.png"))
+                            .Select(n => Path.Combine(path1, $"{prefix}-{n}.png"))
                             .First(p => !File.Exists(p));
             if (Clipboard.ContainsImage())
             {
@@ -70,6 +67,21 @@ namespace teethpaste
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pathSave_Click(object sender, EventArgs e)
+        {
+            string path = pathText.Text;
+
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+                MessageBox.Show("ok this should work");
+            }
+            else
+            {
+                MessageBox.Show("it already exists dum dum");
+            }
         }
     }
 }
